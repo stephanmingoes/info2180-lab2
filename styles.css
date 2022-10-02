@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SegoeUI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2d3748;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 2.2fr 0.2fr;
+    gap: 50px 50px;
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "footer footer footer";
+}
+.main {
+    grid-area: main;
+    margin-left: 3rem;
+}
+.aside {
+    grid-area: aside;
+    margin-right: 3rem;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+}
+.footer p {
+    margin-left: 5rem;
+}
+.header {
+    grid-area: header;
+    background-color: #63b3ed;
+    color: #ffffff;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+    font-size: 36px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.header img {
+    margin-bottom: 1rem;
+    width: 8rem;
+    border-radius: 100%;
+}
+.main article {
+    margin-bottom: 2rem;
+}
+.main article img {
+    width: 16rem;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.main article h2 {
+    font-size: 32px;
+    color: #48bb78;
+}
+.main article h4 {
+    color: #718096;
+}
+
+.aside .about {
+    background-color: #e2e8f0;
+    padding: 1rem;
+}
+
+.aside .about h3 {
+    color: #000000;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.aside .social h3 {
+    color: #48bb78;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.aside .archives h3 {
+    color: #48bb78;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.aside li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+.aside .archives a,
+.aside .social a {
+    text-decoration: none;
+    color: #4299e1;
+}
+
+.footer {
+    background-color: #2c5282;
+    color: #ffffff;
+}
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
