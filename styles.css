@@ -11,8 +11,6 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 2.2fr 0.2fr;
     gap: 50px 50px;
     grid-template-areas:
         "header header header"
@@ -31,6 +29,7 @@ body {
     grid-area: footer;
     display: flex;
     align-items: center;
+    padding: 2rem 0;
 }
 .footer p {
     margin-left: 5rem;
